@@ -4,18 +4,21 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <h1>HOME PAGE</h1>
+      <Link href={"/"}>
+        <h1>HOME PAGE</h1>
+      </Link>
+
       <div>
-        <Link href={"/quizzes"}>Quizzes</Link>
+        <Link href={"pages/quizzes"}>Quizzes</Link>
       </div>
       <div>
-        <Link href={"/users"}>Users</Link>
+        <Link href={"pages/users"}>Users</Link>
       </div>
       <div>
-        <Link href={"/stats"}>Statistics</Link>
+        <Link href={"pages/stats"}>Statistics</Link>
       </div>
       <div>
-        <Link href={"/docs"}>Documents</Link>
+        <Link href={"pages/docs"}>Documents</Link>
       </div>
     </main>
   );
